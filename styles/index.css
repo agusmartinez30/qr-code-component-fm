@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --blue: #2192FF;
+}
+.app-container{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--light-gray);
+    background-image: url('https://t4.ftcdn.net/jpg/04/37/93/59/360_F_437935932_eJsRZ3d11tpE5g7gW7DfVboXdkSAorLI.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-container{
+    max-width: 350px;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 9px;
+    transition: all .5s ease-in-out;
+}
+    .section-container:hover{
+        scale: 1.1;
+    }
+.qr-code-container{
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: 9px;
+    
+}
+    
+    
+    .qr-code-container> img{
+        width: 100%;
+        border-radius: 9px;
+    }
+.statement-container{
+   
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 20px 10px;
+    text-align: center;
+}
+    .statement-container> h2{
+        font-size: 1.3rem;
+        font-weight: 700;
+        font-family: 'Outfit', sans-serif;
+    }
+    .statement-container> p{
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Outfit', sans-serif;
+        color: var(--grayish-blue);
+    }
+.attribution{
+    background-color: #000;
+    color: var(--light-gray);
+    text-align: center;
+    padding: 10px 5px;
+    font-family: 'Outfit', sans-serif;
+}
